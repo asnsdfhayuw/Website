@@ -1,0 +1,146 @@
+:root{
+    --green: rgb(0, 170, 0);
+    --grayish: rgb(177, 177, 177);
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+a:link{
+    color:var(--grayish);
+    text-decoration: none;
+}
+a:visited{
+    color:var(--grayish);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(31, 31, 31);
+    font-family:Arial;
+    margin:0;
+    color:var(--grayish);
+    scroll-behavior: smooth !important;
+}
+
+
+.navbar{
+    background-color:rgb(23, 23, 23);
+    width:100%;
+    height:4vw;
+    position:fixed;
+    top:0;
+    box-shadow:1px 0px 10px black;
+    display: flex;
+
+}
+.navbar label{
+    word-spacing: 5%;
+    list-style-type: none;
+    margin-right:1%;
+    margin-left:1%;
+    color:var(--grayish);
+    font-size:1.5vw;
+    margin-top:1vw;
+
+}
+.navbar li{
+    list-style-type: none;
+    color: rgb(177, 177, 177);
+    font-size:1.5vw;
+    margin-top:1vw;
+    margin-right:1%;
+    margin-left:1%;
+    cursor: pointer;
+}
+.underline{
+    transition: 0.25s ease 0ms;
+    background-color: var(--green);
+    height:0.25vw;
+    width:0;
+    position:relative;
+    top:0.25vw;
+    box-shadow:0px 0px 5px var(--green);
+
+}
+.navbar li:hover>div{
+    width:70%;
+}
+
+.navbar li:first-of-type{
+    margin-left:1vw;
+}
+.menu{
+    position:absolute;
+    right:2vw;
+    top:1vw;
+    cursor: pointer;
+}
+.line{
+    height:0.25vw;
+    background-color:var(--grayish);
+    width:3vw;
+    margin-top:0.5vw;
+}
+.sidebar{
+    height:100vw;
+    width:0vw;
+    position: absolute;
+    right:-1.75vw;
+    top:3vw;
+    background-color:rgb(23, 23, 23);
+    transition:0.25s ease 0ms;
+}
+.menu:active>.sidebar{
+    width:20vw;
+}
+
+
+
+
+.head{
+    border-radius:50%;
+    margin:auto;
+    width:100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    color:white;
+}
+.head h2{
+    font-size:2vw;
+
+}
+.head img{
+    display:block;
+    width:20%;
+    border-radius: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 0px 0px 15px white;
+}
+.head h1{
+    font-size:5vw;
+    color:var(--green);
+
+}
+
+
+.box{
+    border-radius:3vw;
+    background-color:rgb(23, 23, 23);
+    width:50vw;
+    height:22vw;
+    padding:5vw;
+    z-index:-1;
+    
+}
+.box p{
+    font-size:2vw;
+    
+}
+.box h2{
+    font-size:3vw;
+    color:var(--green);
+}
